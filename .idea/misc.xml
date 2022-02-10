@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/edit_text_border.xml" value="0.41302083333333334" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22554347826086957" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
         <entry key="app/src/main/res/layout/confirmation_fragment.xml" value="0.335" />
         <entry key="app/src/main/res/layout/sign_up_fragment.xml" value="0.335" />
       </map>
