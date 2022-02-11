@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/header"
+        android:id="@+id/signupHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -20,16 +20,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subHeader"
+        android:id="@+id/signupSubheader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-medium"
         android:text="Use the form below to submit your portfolio.\nAn email and password are required."
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/header"
-        app:layout_constraintStart_toStartOf="@+id/header"
-        app:layout_constraintTop_toBottomOf="@+id/header" />
+        app:layout_constraintEnd_toEndOf="@+id/signupHeader"
+        app:layout_constraintStart_toStartOf="@+id/signupHeader"
+        app:layout_constraintTop_toBottomOf="@+id/signupHeader" />
 
     <Button
         android:id="@+id/button"
@@ -39,8 +39,8 @@
         android:text="Submit"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/subHeader"
-        app:layout_constraintStart_toStartOf="@+id/subHeader" />
+        app:layout_constraintEnd_toEndOf="@+id/signupSubheader"
+        app:layout_constraintStart_toStartOf="@+id/signupSubheader" />
 
     <EditText
         android:id="@+id/nameInput"
@@ -57,7 +57,7 @@
         android:text="First Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/signupSubheader" />
 
     <EditText
         android:id="@+id/emailInput"
