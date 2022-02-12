@@ -1,16 +1,19 @@
 package com.yambo.microsoftandroidchallenge.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.yambo.microsoftandroidchallenge.databinding.ConfirmationFragmentBinding
+import com.yambo.microsoftandroidchallenge.viewmodels.AuthenticationViewModel
 
 class ConfirmationFragment: Fragment() {
     private var _binding: ConfirmationFragmentBinding? = null
     private val binding get() = _binding!!
+
+    private val viewModel: AuthenticationViewModel by activityViewModels()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
@@ -22,16 +25,10 @@ class ConfirmationFragment: Fragment() {
     }
 
     private fun updateUi() {
-
-        val name = arguments?.getString("name")
-        val website = arguments?.getString("website")
-        val email = arguments?.getString("email")
-
-        binding.confirmationHeader.text = name
-        binding.websiteOutput.text = website
-        binding.nameOutput.text = name
-        binding.emailOutput.text = email
-
+        binding.confirmationHeader.text = viewModel.name.value
+        binding.websiteOutput.text = viewModel.website.value
+        binding.nameOutput.text = viewModel.name.value
+        binding.emailOutput.text = viewModel.email.value
     }
 
     override fun onDestroy() {
