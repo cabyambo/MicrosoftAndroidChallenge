@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="input_text_box_height">60dp</dimen>
-    <dimen name="input_text_box_spacing">15dp</dimen>
+    <dimen name="input_text_box_height">63dp</dimen>
+    <dimen name="input_text_box_spacing">12dp</dimen>
+    <dimen name="cta_button_corner_radius">14dp</dimen>
+    <dimen name="form_input_corner_radius">12dp</dimen>
+    <dimen name="form_input_inner_padding">25dp</dimen>
 </resources>

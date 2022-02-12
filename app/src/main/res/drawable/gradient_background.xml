@@ -3,10 +3,16 @@
     android:shape="rectangle">
     <!--  Gradient Bg for listrow -->
 
+    <corners
+        android:bottomRightRadius="@dimen/cta_button_corner_radius"
+        android:bottomLeftRadius="@dimen/cta_button_corner_radius"
+        android:topLeftRadius="@dimen/cta_button_corner_radius"
+        android:topRightRadius="@dimen/cta_button_corner_radius"/>
+
     <gradient
         android:centerX="1"
         android:centerY="1"
-        android:gradientRadius="1100"
+        android:gradientRadius="800"
         android:startColor="@color/orange_dark"
         android:endColor="@color/orange_bright"
         android:type="radial" />

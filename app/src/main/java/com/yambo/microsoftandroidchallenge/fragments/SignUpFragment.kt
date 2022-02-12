@@ -56,7 +56,7 @@ class SignUpFragment: Fragment() {
                 binding.button.alpha = 1.0f
             } else {
                 binding.button.isEnabled = false
-                binding.button.alpha = 0.75f
+                binding.button.alpha = 1.0f
             }
         })
     }
