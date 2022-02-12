@@ -11,9 +11,9 @@
         android:name="com.yambo.microsoftandroidchallenge.fragments.SignUpFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        tools:layout="@layout/sign_up_fragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/sign_up_fragment" />
 </androidx.constraintlayout.widget.ConstraintLayout>

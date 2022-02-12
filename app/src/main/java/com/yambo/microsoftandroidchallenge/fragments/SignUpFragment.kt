@@ -47,7 +47,7 @@ class SignUpFragment: Fragment() {
         }
 
         binding.websiteInput.addTextChangedListener { website ->
-            viewModel.password.value = website.toString()
+            viewModel.website.value = website.toString()
         }
 
         viewModel.isFormValid.observe(this, { isValidated ->

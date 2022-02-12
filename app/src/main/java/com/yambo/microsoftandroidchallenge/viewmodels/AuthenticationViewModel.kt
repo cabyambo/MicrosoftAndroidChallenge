@@ -20,10 +20,16 @@ class AuthenticationViewModel: ViewModel() {
         _email: LiveData<String>,
         _password: LiveData<String>,
         _website: LiveData<String>): LiveData<Boolean> {
+
         val result = MediatorLiveData<Boolean>()
 
         val validation = Observer<String> {
-            result.value = _name.value == "First Names" && _email.value == "Email Addres"
+            // Name is always valid
+            val validEmail = AuthenticationUtils.isValidEmail(_email.value.toString())
+            val validPassword = AuthenticationUtils.isValidPassword(_password.value.toString())
+            val validWebsite = AuthenticationUtils.isValidWebsite(_website.value.toString())
+
+            result.value = validEmail && validPassword && validWebsite
         }
 
         result.addSource(_name, validation)
