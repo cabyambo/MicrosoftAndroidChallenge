@@ -32,7 +32,7 @@ class AuthenticationViewModel: ViewModel() {
             // Name is always valid
             val validEmail = AuthenticationUtils.isValidEmail(_email.value.toString())
             val validPassword = AuthenticationUtils.isValidPassword(_password.value.toString())
-            val validWebsite = AuthenticationUtils.isValidWebsite(_website.value.toString())
+            val validWebsite = _website.value!!.isEmpty() || AuthenticationUtils.isValidWebsite(_website.value.toString())
 
             result.value = validEmail && validPassword && validWebsite
         }
@@ -43,6 +43,15 @@ class AuthenticationViewModel: ViewModel() {
         result.addSource(_website, validation)
 
         return result
+    }
+
+    fun getConfirmationHeader(): String {
+        var header = "Hello"
+        if (!name.value!!.isEmpty()) {
+            header += ", ${name.value}"
+        }
+        header += "!"
+        return header
     }
 
 }

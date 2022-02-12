@@ -7,11 +7,14 @@
 
     <TextView
         android:id="@+id/confirmationHeader"
+        style="@style/Header"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:ellipsize="end"
+        android:maxLines="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,9 +22,10 @@
 
     <TextView
         android:id="@+id/confirmationSubheader"
+        style="@style/SubHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="Your super-awesome portfolio has been successfullly submitted! The details below will be public within your community!"
         app:layout_constraintEnd_toEndOf="@+id/confirmationHeader"
         app:layout_constraintStart_toStartOf="@+id/confirmationHeader"
@@ -29,11 +33,12 @@
 
     <TextView
         android:id="@+id/websiteOutput"
+        style="@style/Body.Hyperlink"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:autoLink="web"
-        android:inputType="textWebEmailAddress"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="@+id/confirmationSubheader"
         app:layout_constraintStart_toStartOf="@+id/confirmationSubheader"
         app:layout_constraintTop_toBottomOf="@+id/confirmationSubheader"
@@ -41,22 +46,36 @@
 
     <TextView
         android:id="@+id/nameOutput"
+        style="@style/Body"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        tools:text="Audrey"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="@+id/websiteOutput"
         app:layout_constraintStart_toStartOf="@+id/websiteOutput"
-        app:layout_constraintTop_toBottomOf="@+id/websiteOutput" />
+        app:layout_constraintTop_toBottomOf="@+id/websiteOutput"
+        tools:text="Audrey" />
 
     <TextView
         android:id="@+id/emailOutput"
+        style="@style/Body"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        tools:text="ammcoy9831@hotmail.com"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="@+id/nameOutput"
         app:layout_constraintStart_toStartOf="@+id/nameOutput"
-        app:layout_constraintTop_toBottomOf="@+id/nameOutput" />
+        app:layout_constraintTop_toBottomOf="@+id/nameOutput"
+        tools:text="ammcoy9831@hotmail.com" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_marginBottom="30dp"
+        android:text="Sign In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/emailOutput"
+        app:layout_constraintStart_toStartOf="@+id/emailOutput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

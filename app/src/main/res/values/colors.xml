@@ -10,4 +10,6 @@
     <color name="orange_bright">#FE4917</color>
     <color name="orange_dark">#FE254B</color>
     <color name="text_dark_grey">#545454</color>
+    <color name="text_light_grey">#838383</color>
+    <color name="blue_hyperlink">#0879D5</color>
 </resources>

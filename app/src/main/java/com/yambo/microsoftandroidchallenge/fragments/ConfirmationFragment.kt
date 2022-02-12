@@ -25,7 +25,7 @@ class ConfirmationFragment: Fragment() {
     }
 
     private fun updateUi() {
-        binding.confirmationHeader.text = viewModel.name.value
+        binding.confirmationHeader.text = viewModel.getConfirmationHeader()
         binding.websiteOutput.text = viewModel.website.value
         binding.nameOutput.text = viewModel.name.value
         binding.emailOutput.text = viewModel.email.value
