@@ -7,6 +7,11 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import com.yambo.microsoftandroidchallenge.utils.AuthenticationUtils
 
+/**
+ * Shared ViewModel for
+ * storing authentication
+ * data
+ */
 class AuthenticationViewModel: ViewModel() {
     val name: MutableLiveData<String> = MutableLiveData("")
     val email: MutableLiveData<String> = MutableLiveData("")
