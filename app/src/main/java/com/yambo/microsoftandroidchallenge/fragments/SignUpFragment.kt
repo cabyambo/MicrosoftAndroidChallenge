@@ -1,7 +1,6 @@
 package com.yambo.microsoftandroidchallenge.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,7 +38,6 @@ class SignUpFragment: Fragment() {
 
         binding.emailInput.addTextChangedListener { email ->
             viewModel.email.value = email.toString()
-            Log.d("TAGyolo", viewModel.email.value.toString())
         }
 
         binding.passwordInput.addTextChangedListener { password ->
@@ -68,7 +66,6 @@ class SignUpFragment: Fragment() {
     }
 
     private fun loadConfirmationFragment() {
-        Log.d("TAGyolo", viewModel.email.value.toString() + " first")
         val fragmentManager = parentFragmentManager
 
         val confirmationFragment = ConfirmationFragment()

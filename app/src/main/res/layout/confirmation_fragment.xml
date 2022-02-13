@@ -39,13 +39,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:autoLink="web"
-        android:ellipsize="middle"
+        android:ellipsize="end"
         android:gravity="center"
-        android:singleLine="true"
+        android:maxLines="1"
         app:layout_constraintEnd_toEndOf="@+id/confirmationSubheader"
         app:layout_constraintStart_toStartOf="@+id/confirmationSubheader"
         app:layout_constraintTop_toBottomOf="@+id/confirmationSubheader"
-        tools:text="amccoy88kjkjkjkjkjkjkjkjkjkjkjgftcrdyrtextexyexetwxerwxrertwxer31.com" />
+        tools:text="amccoy8831.com" />
 
     <TextView
         android:id="@+id/nameOutput"
@@ -56,6 +56,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:singleLine="true"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/websiteOutput"
         app:layout_constraintStart_toStartOf="@+id/websiteOutput"
         app:layout_constraintTop_toBottomOf="@+id/websiteOutput"

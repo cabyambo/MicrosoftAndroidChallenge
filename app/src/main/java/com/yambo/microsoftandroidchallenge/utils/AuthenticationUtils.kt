@@ -1,7 +1,6 @@
 package com.yambo.microsoftandroidchallenge.utils
 
 import android.util.Patterns
-import android.webkit.URLUtil
 
 object AuthenticationUtils {
     fun isValidEmail(email: String): Boolean {
@@ -9,7 +8,7 @@ object AuthenticationUtils {
     }
 
     fun isValidPassword(password: String): Boolean {
-        return password.isNotEmpty()
+        return password.isNotEmpty() // Arbitrary required length of 1
     }
 
     fun isValidWebsite(website: String): Boolean {
