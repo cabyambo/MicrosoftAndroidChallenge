@@ -19,12 +19,12 @@ class ConfirmationFragment: Fragment() {
     ): View? {
         _binding = ConfirmationFragmentBinding.inflate(inflater, container, false)
 
-        updateUi()
+        setUi()
 
         return binding.root
     }
 
-    private fun updateUi() {
+    private fun setUi() {
         binding.confirmationHeader.text = viewModel.getConfirmationHeader()
         binding.websiteOutput.text = viewModel.website.value
         binding.nameOutput.text = viewModel.name.value
